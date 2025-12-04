@@ -1,9 +1,23 @@
-def f(my_func):
-    sum_alimenti = 0
-    for alimenti in my_func:
-        sum_alimenti += alimenti
-    return sum_alimenti / len(my_func)
+import random
+N = int(input('Длина массива: '))
 
-A = [1, 2 , 4, 5, 6, 7, 8]
-result = f(A)
-print(f'Среднее арифметическое: {result}')
+a1 = []
+a2 = []
+a3 = []
+
+for i in range(N):
+    num = random.randint(1, 100)
+    a1.append(num)
+
+for i in range(N):
+    num = random.randint(1, 100)
+    a2.append(num)
+ 
+for i in range(N):
+    num = random.randint(1, 100)
+    a3.append(num)
+
+print(a1, a2, a3)
+
+print(max(max(a1), max(a2), max(a3)))
+print(sum(a1) + sum(a2) + sum(a3))
