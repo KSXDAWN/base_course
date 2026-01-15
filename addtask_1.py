@@ -80,4 +80,4 @@ ani = FuncAnimation(fig, update, frames=200,
 
 plt.tight_layout()
 plt.show()
-ani.save('animation_6.gif', writer="pillow")
+ani.save('animation_6.gif', writer="pillow")  
